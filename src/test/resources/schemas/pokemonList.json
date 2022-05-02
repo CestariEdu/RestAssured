@@ -1,0 +1,26 @@
+{
+  "$schema": "http://json-schema.org/draft-04/schema",
+  "type": "object",
+  "required": [
+      "count",
+      "next",
+      "previous",
+      "results"
+  ],
+  "additionalProperties": true,
+  "properties": {
+      "count": {
+          "type": "number"
+      },
+      "next": {
+          "type": "string"
+      },
+      "previous": {
+          "type": "null"
+      },
+      "results": {
+          "type": "array",
+          "additionalItems": true
+      }
+  }
+}
